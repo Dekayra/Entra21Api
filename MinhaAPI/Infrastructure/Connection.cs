@@ -5,7 +5,7 @@ namespace MinhaAPI.Infrastructure
 {
     public class Connection
     {
-        protected string connectionString = "Server=localhost;Database=aula;User=root;Password=root;";
+        protected string connectionString = "Server=localhost;Database=MovEasy;User=root;Password=root;";
 
         protected MySqlConnection GetConnection()
         {

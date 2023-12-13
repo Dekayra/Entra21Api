@@ -6,7 +6,7 @@ using MinhaAPI.Infrastructure;
 
 namespace MinhaAPI.Repository
 {
-    public class UserRepositoy : Connection, IUserRepository
+    public class UserRepository : Connection, IUserRepository
     {
         public async Task Add(UserDTO user)
         {
