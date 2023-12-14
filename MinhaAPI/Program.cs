@@ -11,6 +11,7 @@ builder.Services.AddEndpointsApiExplorer();
 
 builder.Services.AddTransient<IUserRepository, UserRepository>();
 builder.Services.AddTransient<IVehicleRepository, VehicleRepository>();
+builder.Services.AddTransient<IStateRepository, StateRepository>();
 
 builder.Services.AddSwaggerGen();
 
