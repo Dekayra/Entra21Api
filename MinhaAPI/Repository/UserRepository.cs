@@ -11,8 +11,29 @@ namespace MinhaAPI.Repository
         public async Task Add(UserDTO user)
         {
             string sql = @"
-                INSERT INTO USER (Name, Email, Password)
-                    VALUE (@Name, @Email, @Password)
+                INSERT INTO USER (
+                        Document,
+                        Telephone1,
+                        Telephone2,
+                        Name,
+                        LastName, 
+                        Email, 
+                        PasswordHash,
+                        Type,
+                        CNH,
+                        Photo
+                    ) VALUE (
+                        @Document,
+                        @Telephone1,
+                        @Telephone2,
+                        @Name,
+                        @LastName,
+                        @Email, 
+                        @PasswordHash,
+                        @Type,
+                        @CNH,
+                        @Photo
+                    )
             ";
 
             await Execute(sql , user);
@@ -42,9 +63,16 @@ namespace MinhaAPI.Repository
             string sql = @"
                 UPDATE USER 
                     SET 
+                        Document = @Document,
+                        Telephone1 = @Telephone1,
+                        Telephone2 = @Telephone2,
                         Name = @Name,
-                        Email = @Email,
-                        Password = @Password
+                        LastName = @LastName, 
+                        Email = @Email, 
+                        PasswordHash = @PasswordHash,
+                        Type = @Type,
+                        CNH = @CNH,
+                        Photo = @Photo
                     WHERE
                         Id = @Id
             ";
