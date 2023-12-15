@@ -13,6 +13,8 @@ builder.Services.AddTransient<IUserRepository, UserRepository>();
 builder.Services.AddTransient<IVehicleRepository, VehicleRepository>();
 builder.Services.AddTransient<IStateRepository, StateRepository>();
 
+builder.Services.AddCors();
+
 builder.Services.AddSwaggerGen();
 
 var app = builder.Build();
