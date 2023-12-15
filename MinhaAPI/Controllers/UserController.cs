@@ -49,5 +49,12 @@ namespace MinhaAPI.Controllers
         {
             return Ok(await _userRepository.GetById(id));
         }
+
+        [HttpPost]
+        [Route("login")]
+        public async Task<IActionResult> Login(UserLoginDTO user)
+        {
+            return Ok(await _userRepository.Login(user));
+        }
     }
 }

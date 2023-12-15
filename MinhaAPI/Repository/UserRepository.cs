@@ -79,5 +79,14 @@ namespace MinhaAPI.Repository
 
             await Execute(sql, user);
         }
+
+        public async Task<string> Login(UserLoginDTO user)
+        {
+            string sql = "SELECT * FROM USER WHERE Email = @Email and PasswordHash = @Password";
+
+            UserLoginDTO userLogin = await GetConnection().QueryFirstAsync<UserLoginDTO>(sql, user);
+
+            return "Logado";
+        }
     }
 }

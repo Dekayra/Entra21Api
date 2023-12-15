@@ -10,5 +10,7 @@ namespace MinhaAPI.Contracts.Repository
         Task Delete(int id);
         Task<UserEntity> GetById(int id);
         Task<IEnumerable<UserEntity>> Get();
+
+        Task<string> Login(UserLoginDTO user);
     }
 }
