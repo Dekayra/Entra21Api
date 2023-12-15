@@ -11,6 +11,6 @@ namespace MinhaAPI.Contracts.Repository
         Task<UserEntity> GetById(int id);
         Task<IEnumerable<UserEntity>> Get();
 
-        Task<string> Login(UserLoginDTO user);
+        Task<UserTokenDTO> Login(UserLoginDTO user);
     }
 }

@@ -80,13 +80,16 @@ namespace MinhaAPI.Repository
             await Execute(sql, user);
         }
 
-        public async Task<string> Login(UserLoginDTO user)
+        public async Task<UserTokenDTO> Login(UserLoginDTO user)
         {
             string sql = "SELECT * FROM USER WHERE Email = @Email and PasswordHash = @Password";
 
-            UserLoginDTO userLogin = await GetConnection().QueryFirstAsync<UserLoginDTO>(sql, user);
+            UserEntity userLogin = await GetConnection().QueryFirstAsync<UserEntity>(sql, user);
 
-            return "Logado";
+            return new UserTokenDTO
+            {
+                Token = Authentication.GenerateToken(userLogin)
+            };
         }
     }
 }

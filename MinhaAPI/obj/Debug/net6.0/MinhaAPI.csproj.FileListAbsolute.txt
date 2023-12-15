@@ -120,3 +120,10 @@ C:\Users\ricardo.mees\Desktop\OneDrive - SENAC-SC\00_Codigo\03_Backend\2023.12.1
 C:\Users\ricardo.mees\Desktop\OneDrive - SENAC-SC\00_Codigo\03_Backend\2023.12.13\MinhaAPI\MinhaAPI\obj\Debug\net6.0\MinhaAPI.pdb
 C:\Users\ricardo.mees\Desktop\OneDrive - SENAC-SC\00_Codigo\03_Backend\2023.12.13\MinhaAPI\MinhaAPI\obj\Debug\net6.0\MinhaAPI.genruntimeconfig.cache
 C:\Users\ricardo.mees\Desktop\OneDrive - SENAC-SC\00_Codigo\03_Backend\2023.12.13\MinhaAPI\MinhaAPI\obj\Debug\net6.0\ref\MinhaAPI.dll
+C:\Users\ricardo.mees\Desktop\OneDrive - SENAC-SC\00_Codigo\03_Backend\2023.12.13\MinhaAPI\MinhaAPI\bin\Debug\net6.0\Microsoft.AspNetCore.Authentication.JwtBearer.dll
+C:\Users\ricardo.mees\Desktop\OneDrive - SENAC-SC\00_Codigo\03_Backend\2023.12.13\MinhaAPI\MinhaAPI\bin\Debug\net6.0\Microsoft.IdentityModel.JsonWebTokens.dll
+C:\Users\ricardo.mees\Desktop\OneDrive - SENAC-SC\00_Codigo\03_Backend\2023.12.13\MinhaAPI\MinhaAPI\bin\Debug\net6.0\Microsoft.IdentityModel.Logging.dll
+C:\Users\ricardo.mees\Desktop\OneDrive - SENAC-SC\00_Codigo\03_Backend\2023.12.13\MinhaAPI\MinhaAPI\bin\Debug\net6.0\Microsoft.IdentityModel.Protocols.dll
+C:\Users\ricardo.mees\Desktop\OneDrive - SENAC-SC\00_Codigo\03_Backend\2023.12.13\MinhaAPI\MinhaAPI\bin\Debug\net6.0\Microsoft.IdentityModel.Protocols.OpenIdConnect.dll
+C:\Users\ricardo.mees\Desktop\OneDrive - SENAC-SC\00_Codigo\03_Backend\2023.12.13\MinhaAPI\MinhaAPI\bin\Debug\net6.0\Microsoft.IdentityModel.Tokens.dll
+C:\Users\ricardo.mees\Desktop\OneDrive - SENAC-SC\00_Codigo\03_Backend\2023.12.13\MinhaAPI\MinhaAPI\bin\Debug\net6.0\System.IdentityModel.Tokens.Jwt.dll

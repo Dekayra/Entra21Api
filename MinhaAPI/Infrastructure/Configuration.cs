@@ -3,6 +3,6 @@
     public class Configuration
     {
 
-        public static string JWTSecret { get; set; } = "ChaveDificil";
+        public static string JWTSecret { get; set; } = "ChaveDificil00000000000000000000";
     }
 }
