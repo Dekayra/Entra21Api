@@ -54,7 +54,13 @@ namespace MinhaAPI.Controllers
         [Route("login")]
         public async Task<IActionResult> Login(UserLoginDTO user)
         {
-            return Ok(await _userRepository.Login(user));
+            try
+            {
+                return Ok(await _userRepository.Login(user));
+            } catch(Exception Ex)
+            {
+                return Unauthorized(Ex.Message);
+            }
         }
     }
 }
