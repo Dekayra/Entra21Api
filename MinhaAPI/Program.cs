@@ -1,6 +1,7 @@
 using Microsoft.AspNetCore.Authentication.JwtBearer;
 using Microsoft.IdentityModel.Tokens;
 using Microsoft.OpenApi.Models;
+using MinhaAPI.Infrastructure;
 using MinhaAPI.Contracts.Repository;
 using MinhaAPI.Repository;
 using System.Text;
@@ -19,11 +20,11 @@ builder.Services.AddTransient<IStateRepository, StateRepository>();
 
 builder.Services.AddCors();
 
-var key = Encoding.ASCII.GetBytes(MinhaAPI.Infrastructure.Configuration.JWTSecret);
+var key = Encoding.ASCII.GetBytes(Configuration.JWTSecret);
 
 builder.Services.AddSwaggerGen(c =>
 {
-    c.AddSecurityDefinition("Bearer", new Microsoft.OpenApi.Models.OpenApiSecurityScheme()
+    c.AddSecurityDefinition("Bearer", new OpenApiSecurityScheme()
     {
         Name = "Authorization",
         Type = SecuritySchemeType.ApiKey,

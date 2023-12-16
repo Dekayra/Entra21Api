@@ -1,4 +1,5 @@
-﻿using Microsoft.AspNetCore.Mvc;
+﻿using Microsoft.AspNetCore.Authorization;
+using Microsoft.AspNetCore.Mvc;
 using MinhaAPI.Contracts.Repository;
 using MinhaAPI.DTO;
 using MinhaAPI.Entity;
@@ -18,6 +19,7 @@ namespace MinhaAPI.Controllers
         }
 
         [HttpGet]
+        [Authorize]
         public async Task<IActionResult> Get()
         {
             return Ok(await _userRepository.Get());
