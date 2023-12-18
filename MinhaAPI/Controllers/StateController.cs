@@ -22,11 +22,5 @@ namespace MinhaAPI.Controllers
         {
             return Ok(await _StateRepository.Get());
         }
-
-        [HttpGet("{id}")]
-        public async Task<IActionResult> GetById(int id)
-        {
-            return Ok(await _StateRepository.GetById(id));
-        }
     }
 }

@@ -26,6 +26,7 @@ namespace MinhaAPI.Controllers
         }
 
         [HttpPost]
+        [Authorize]
         public async Task<IActionResult> Add(UserDTO user)
         {
             await _userRepository.Add(user);
@@ -33,6 +34,7 @@ namespace MinhaAPI.Controllers
         }
 
         [HttpPut]
+        [Authorize]
         public async Task<IActionResult> Update(UserEntity user)
         {
             await _userRepository.Update(user);
@@ -40,6 +42,7 @@ namespace MinhaAPI.Controllers
         }
 
         [HttpDelete]
+        [Authorize]
         public async Task<IActionResult> Delete(int id)
         {
             await _userRepository.Delete(id);
