@@ -26,7 +26,6 @@ namespace MinhaAPI.Controllers
         }
 
         [HttpPost]
-        [Authorize]
         public async Task<IActionResult> Add(UserDTO user)
         {
             await _userRepository.Add(user);
