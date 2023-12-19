@@ -66,5 +66,15 @@ namespace MinhaAPI.Controllers
                 return Unauthorized(Ex.Message);
             }
         }
+
+        [HttpGet]
+        [Route("salarios")]
+        [Authorize(Roles = "admin")]
+        public string Salarios() => "Salario";
+
+        [HttpGet]
+        [Route("funcionarios")]
+        [Authorize(Roles = "default,admin")]
+        public string Funcionarios() => "Funcionarios";
     }
 }

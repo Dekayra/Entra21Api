@@ -13,6 +13,7 @@
         public int Type { get; set; }
         public string? CNH { get; set; }
         public string? Photo { get; set; }
+        public string Role { get; set; }
 
     }
 }

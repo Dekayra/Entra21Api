@@ -21,7 +21,8 @@ namespace MinhaAPI.Repository
                         PasswordHash,
                         Type,
                         CNH,
-                        Photo
+                        Photo,
+                        Role
                     ) VALUE (
                         @Document,
                         @Telephone1,
@@ -32,7 +33,8 @@ namespace MinhaAPI.Repository
                         @PasswordHash,
                         @Type,
                         @CNH,
-                        @Photo
+                        @Photo,
+                        @Role
                     )
             ";
 
@@ -72,7 +74,8 @@ namespace MinhaAPI.Repository
                         PasswordHash = @PasswordHash,
                         Type = @Type,
                         CNH = @CNH,
-                        Photo = @Photo
+                        Photo = @Photo,
+                        Role = @Role
                     WHERE
                         Id = @Id
             ";
@@ -88,7 +91,8 @@ namespace MinhaAPI.Repository
 
             return new UserTokenDTO
             {
-                Token = Authentication.GenerateToken(userLogin)
+                Token = Authentication.GenerateToken(userLogin),
+                User = userLogin
             };
         }
     }
